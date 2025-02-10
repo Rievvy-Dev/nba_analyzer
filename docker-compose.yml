@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  api:
+    build: ./nba-analyzer-api
+    ports:
+      - "8000:8000"
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    volumes:
+      - ./nba-analyzer-api:/app
+
+  front:
+    build: ./nba-analyzer-front
+    ports:
+      - "3000:80"
+    depends_on:
+      - api
