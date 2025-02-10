@@ -1,0 +1,6 @@
+[submodule "nba-analyzer-api"]
+	path = nba-analyzer-api
+	url = https://github.com/Rievvy-Dev/nba-analyzer-api.git
+[submodule "nba-analyzer-front"]
+	path = nba-analyzer-front
+	url = https://github.com/Rievvy-Dev/nba-analyzer-front.git
